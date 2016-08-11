@@ -1,0 +1,448 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			 @About-Us | 10i
+  		</title>
+  		<style>
+  		    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  			*{
+  				box-sizing: border-box;
+  			}
+  			body{
+  				padding: 0px;
+  				margin: 0px;
+  				width:100%;
+  				height:100%;
+  				background-color:yellow;
+  			}
+  			#table{
+                   display:table;
+                   width:100%;
+  				   height:100%;
+  			}
+  			.tr{
+  				display:table-row;
+  				width:100%;
+  				height:100%;
+  			}
+  			.table_cell{
+  				display:table-cell;
+  				clear: both;
+  				width:100%;
+  				text-align:center;
+  				vertical-align: middle;
+  				z-index:1; 
+  			}
+  			
+  			#nav{
+                padding: 20px 103px;
+                transition: padding 0.3s;
+                background-color: white;
+                position:fixed;
+                box-sizing: border-box;
+            }
+
+            .windowscroll{
+                padding: 10px 103px 0px 103px !important;
+                box-sizing: border-box;
+             }
+         
+            li{
+                margin: 0px;
+                padding: 0px;
+                display: inline-block;
+                font-size: 14px;
+                padding-right: 22px;
+            }
+             #img_logo_big{
+                max-width: 100%;
+                max-height: 43px;
+            }
+            .img_logo_small{
+                max-height:30px !important;
+            }
+            #img_logo_out{
+                margin: 0px;
+                padding: 0px;         
+                float:left;
+            }
+             #menu{
+                margin: 0px;
+                padding: 0px;
+                float:right;
+                font-size: 14px;
+                font-family: 'Open-sans',Helvetica, Arial, Lucida, sans-serif;
+            }
+
+  			#header{
+                   background-color:pink;
+                   height:80px;
+  			}
+  			#section1{
+  				    background-image:url(http://10i.co.in/wp-content/uploads/2016/01/AboutUsCover-Bg.jpg);
+  				    background-attachment:fixed;
+  				    background-repeat: no-repeat;
+                    background-position: top center;
+                    background-size: cover;
+  				    height:100%;
+  				    color:white;
+  				    padding:50px 0px;
+                    font-weight: 500;
+  			}
+  			.section1div1{
+  				margin:0px 103px;
+  				padding:30px 0px 0px 0px;
+  			    font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+  			}
+  			#article1{
+  				    background-color:white;
+  				    height:400px;
+  				    color:black;
+  				    text-align: left !important;
+                    font-weight: 500;
+  			}
+  			.article1heading1{
+  				font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+  			}
+  			.article1para1{
+  				font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+  			}
+  			#section2{
+  				    background-image:url(http://10i.co.in/wp-content/uploads/2016/01/ManagementTeam-Bg.jpg);
+  				    background-attachment:fixed;
+  				    background-repeat: no-repeat;
+                    background-position: top center;
+                    background-size: cover;
+  				    height:100%;
+  				    color:white;
+  				    padding:50px 0px;
+                    font-weight: 500;
+  			}
+  			.section2div1{
+  				margin:0px 103px;
+  				padding:30px 0px 0px 0px;
+  			    font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+  			    font-size: 30px;
+  			}
+  			#member{
+  				height:100%;
+  				width:100%;
+  				background-color:#f2f2f2 !important;
+  				padding:50px 0px;
+  			}
+  			.member1space1{
+  				height:100%;
+  				background-color:#f2f2f2 !important;
+  				margin:0px 103px;
+  				padding:30px 0px 0px 0px;
+  			}
+  			
+  			.member1each1{
+  				height:100%;
+  				width:100%;
+  				background-color:#f2f2f2 !important;
+  			}
+  			.member1pic1{
+                float:left;
+                width:30%;
+                height:100%;
+                background-color:#f2f2f2 !important;
+                text-align: left !important;
+                padding: 0px 0px 60px 0px;
+
+  			}
+  			.member1details1{
+  				float:left;
+                width:70%;
+                height:100%;
+                background-color:#f2f2f2 !important;
+                color:black;
+  			}
+  			.member1details1h3{
+  				font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+  				font-size: 22px;
+  				text-align: left !important;
+  				margin: 0px;
+  				padding: 0px 0px 10px 0px;
+  				line-height: 1em;
+                font-weight: 500;
+  			}
+  			.member1details1h6{
+  				font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+  				font-size: 14px;
+  				text-align: left !important;
+  				margin: 0px;
+  				padding: 0px 0px 10px 0px;
+  				line-height: 1em;
+                font-weight: 500;
+  			}
+  			.member1details1p{
+  				font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+  				text-align: justify;
+  				padding:0px 0px 14px 0px;
+  			}
+  			.member1space2{
+  				height:44px;
+  				background-color:#f2f2f2 !important;
+  				margin:0px 103px;
+  				padding:30px 0px 0px 0px;
+  				clear:both;
+  			}
+
+  			#video{
+  				height:100%;
+  				width:100%;
+  				background-color:white;
+  				margin: 0px;
+                padding: 0px;
+  			}
+  			.video_heading{
+  				height: 100%;
+  				width: auto;
+                background-color:white;
+                color: black;
+                margin: 0px 70px;
+                box-sizing: border-box;
+                text-align:left !important;
+                font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+                font-size: 30px;
+                line-height: 1em;
+                font-weight: 500;
+  			}
+  			.video_main{
+  				height:100%;
+  				width:100%;
+  				background-color:white;
+  				margin: 0px;
+                padding: 0px;
+  			}
+  			.video_main_screen1{
+  				height:100%;
+  				width:50%;
+  				float:left;
+  				background-color:white;
+  				margin: 0px;
+                padding: 0px;
+  			}
+  			.video_main_screen2{
+  				height:100%;
+  				width:50%;
+  				float:left;
+  				background-color:white;
+  				margin: 0px;
+                padding: 0px;
+  			}
+  			.video_main_screen1video_only{
+  				width: auto;
+                height: 256px;
+                background-color:black;
+                margin: 70px;
+                box-sizing: border-box;
+  			}
+  			.video_main_screen1footer{
+  				width: auto;
+                background-color:white;
+                color: black;
+                margin: 70px;
+                box-sizing: border-box;
+                text-align:left !important;
+                font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+                font-size: 18px;
+                line-height: 1em;
+                font-weight: 500;
+  			}
+  			#footer{
+  				    background-color:black;
+  				    color:black;
+  				    height:30px;
+  			}
+
+  			a.other:link,a.other:visited,a.other:hover,a.other:active{text-decoration: none; color:black;}
+            a.about_us:link,a.about_us:visited,a.about_us:hover,a.about_us:active{text-decoration: none; color:red;}
+  		</style>
+	</head>
+	<body>
+		  <div id="table">
+		  	    <nav class="tr">
+		  	    	<div id="nav" class="table_cell">
+		  	    		<div id="img_logo_out">
+                            <img id="img_logo_big" src="http://10i.co.in/wp-content/uploads/2016/04/10i-logo_final.png"/>
+                        </div>
+                        <div id="menu">
+                            <ul>
+                                <li><a class="other" href="index.html">HOME</a></li>
+                                <li><a class="about_us" href="">ABOUT US</a></li>
+                                <li><a class="other" href="">OUR CULTURE</a></li>
+                                <li><a class="other" href="">CARRER</a></li>
+                                <li><a class="other" href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+		  	    	</div>
+		  	    </nav>
+		  	    <header class="tr">
+		  	    	<div id="header" class="table_cell"></div>
+		  	    </header>
+		  	    <section class="tr">
+		  	    	<div id="section1" class="table_cell" style="padding:0px 0px 10px 0px; margin:0px;">
+		  	    	     <div class="section1div1" style="padding:0px 0px 10px 0px; margin:0px;">
+		  	    	        <hr style="height:100px;margin:7px 0px;padding:0px; border: none;"/>
+		  	    	     	<div style="padding:0px 0px 30px 0px; margin:0px;">
+		  	    	     		<h3 style="padding:0px 0px 10px 0px; margin:0px; font-size: 22px;">&nbsp;While E-commerce is developing rapidly in India</h3>
+		  	    	     	    <h3 style="padding:0px 0px 10px 0px; margin:0px;"></h3>
+		  	    	     		<h3>&nbsp;</h3>
+		  	    		        <h1 style="padding:0px 0px 10px 0px; margin:0px;font-size: 30px;">Only 1% of urban areas benefit from it.</h1>
+                                <h1 style="padding:0px 0px 10px 0px; margin:0px;font-size: 30px;">We at 10i, are looking at the 99%</h1>
+		  	    	     	</div>
+		  	    	     	<hr style="height:100px;margin:7px 0px;padding:0px 0px 10px 0px; border: none;"/>
+		  	    	     </div>
+		  	    	</div>
+		  	    </section>
+		  	    <article class="tr">
+		  	    	<div id="article1" class="table_cell">
+		  	    		<div style="padding:50px 0px;">
+		  	    			<div style="margin:0px 103px;padding:30px 0px 0px 0px;">
+		  	    				<div>
+		  	    				    <hr style="height:30px; margin:7px 0px; display:none;"/>
+		  	    					<div style="margin:0px 0px 30px 0px;">
+		  	    		                <h1 class="article1heading1" style="font-size:30px; padding:0px 0px 10px;">Our Vision</h1>
+		  	    		 	            <p class="article1para1">
+		  	    		 		            At 10i, we have initiated change — change for the best. Our vision is to help the world live better. We are on a journey to simplifying everything, so that you can focus on your loved ones and things that matter the most. We are here to get to the root of every challenge, find a solution and deliver to you a world that’s filled to the brim with optimism, innovation, transparency, and advancement. Live better with 10i.
+		  	    		 	            </p class="article1para1">
+		  	    		            </div>
+		  	    		                <hr style="border-color:1px solid #d7d7d7;"/>
+		  	    		                <hr style="height:30px; margin-bottom:30px; border-color:1px solid #d7d7d7;border-top: 1px solid rgba(253, 230, 230, 0.1); border:none;"/>
+		  	    		            <div style="margin:0px 0px 30px 0px;">
+		  	    		                <h1 class="article1heading1" style="font-size:30px; padding:0px 0px 10px;">Our Mission</h1>
+		  	    		 	            <p>
+		  	    		 		        Our mission is Innovation and Optimism for 10i. As India leapfrogs its way to become one of the fastest growing economies on earth, 10i, spearheaded by an ocean of highly ambitious individuals, is at the forefront, changing the way the e-commerce industry will be experienced in the future across the planet.
+		  	    		 	            </p>
+		  	    		 	            <hr style="height:30px; margin:7px 0px;display:none;"/>
+		  	    		            </div>
+		  	    				</div>
+		  	    			</div>
+		  	    		</div>
+		  	    	</div>
+		  	    </article>
+		  	    <section class="tr">
+		  	    	<div id="section2" class="table_cell">
+		  	    		<div class="section2div1">
+		  	    	        <hr style="height:100px;margin:7px 0px;padding:0px;border: none;"/>
+		  	    	     	<div style="padding:0px 0px 30px 0px; margin:0px;">
+		  	    	     		<h1 style="padding:0px 0px 30px 0px;margin:0px;line-height: 1em;font-weight: 500;">Management Team</h1>
+		  	    	     	</div>
+		  	    	     	<hr style="height:100px;margin:7px 0px;padding:0px;border: none;"/>
+		  	    	     </div>
+		  	    	</div>
+		  	    	
+		  	    </section>
+
+		  	    <section class="tr">
+		  	    	<div id="member" class="table_cell">
+		  	    		<div class="member1space1">
+		  	    			<div class="member1each1">
+		  	    			<aside class="member1pic1">
+		  	    				<img src="http://10i.co.in/wp-content/uploads/2016/01/amit_sharma1.jpg"/>
+		  	    			</aside>
+		  	    			<aside class="member1details1">
+		  	    				<h3 class="member1details1h3">Amit Sharma</h3>
+		  	    				<h6 class="member1details1h6">CEO and Co-Founder</h6>
+		  	    				<p class="member1details1p">
+		  	    					Amit has 15 years of experience in technology, startup building and eCommerce. In a past life as an engineer, he designed and built one of the first Grid Computing Management Platforms in the world, and was the lead inventor for its patents in Europe/US. He has also published / presented more than 12 research papers in international IEEE/ACM Journals and Conferences in the areas of Artificial Intelligence, Grid Computing and Service Oriented Architectures. He has successfully raised multiple rounds of funding, built a profitable eCommerce business in India, and led the Startup Leadership Program in Bangalore. He holds an MBA from University of California Los Angeles (UCLA) and worked in Silicon Valley before returning to India.
+		  	    				</p>
+		  	    			</aside>
+		  	    		</div>
+		  	    		</div>
+		  	    		<div class="member1space2"></div>
+
+		  	    		<div class="member1space1">
+		  	    			<div class="member1each1">
+		  	    			<aside class="member1pic1">
+		  	    				<img src="http://10i.co.in/wp-content/uploads/2016/01/apoorvajois.jpg"/>
+		  	    			</aside>
+		  	    			<aside class="member1details1">
+		  	    				<h3 class="member1details1h3">Apoorva Jois</h3>
+		  	    				<h6 class="member1details1h6">CEO and Co-Founder</h6>
+		  	    				<p class="member1details1p">
+		  	    					A  two time entrepreneur with 15 years of experience in the tech industry. Determined to create a technology platform which the changes the face of general trade and also touches upgrades the overall status of the people involved in general trade
+		  	    				</p>
+		  	    			</aside>
+		  	    		</div>
+		  	    		</div>
+		  	    		<div class="member1space2"></div>
+
+		  	    		<div class="member1space1">
+		  	    			<div class="member1each1">
+		  	    			<aside class="member1pic1">
+		  	    				<img src="http://10i.co.in/wp-content/uploads/2016/01/JagdishKini.jpg"/>
+		  	    			</aside>
+		  	    			<aside class="member1details1">
+		  	    				<h3 class="member1details1h3">Jagdish Kini</h3>
+		  	    				<h6 class="member1details1h6">Director</h6>
+		  	    				<p class="member1details1p">
+		  	    					A business veteran with experience in building and leading companies and industries such as Loreal, Gillette and Airtel in India from scratch . A core sales and management person passionate about creating yet another impact through 10i
+		  	    				</p>
+		  	    			</aside>
+		  	    		</div>
+		  	    		</div>
+		  	    		<div class="member1space2"></div>
+
+		  	    		<div class="member1space1">
+		  	    			<div class="member1each1">
+		  	    			<aside class="member1pic1">
+		  	    				<img src="http://10i.co.in/wp-content/uploads/2016/01/PramodkVarma.jpg"/>
+		  	    			</aside>
+		  	    			<aside class="member1details1">
+		  	    				<h3 class="member1details1h3">Pramod Varma</h3>
+		  	    				<h6 class="member1details1h6">Advisor</h6>
+		  	    				<p class="member1details1p">
+		  	    					A Technical veteran, man behind the technical architecture of world’s largest human database (Aadhar). A man focused on creating yet again the best technical platform handling millions of retailers and millions of transactions on a day to day level.
+		  	    				</p>
+		  	    			</aside>
+		  	    		</div>
+		  	    		</div>
+		  	    	</div>
+		  	    </section>
+
+
+		  	    <section class="tr">
+		  	    	<div id="video" class="table_cell">
+		  	    		<div class="video_heading">Team Speaks</div>
+		  	    		<div class="video_main">
+		  	    			<aside class="video_main_screen1">
+		  	    				<div class="video_main_screen1video_only">vi</div>
+		  	    				<div class="video_main_screen1footer"><h4>Amit Sharma, CEO and Co-Founder</h4></div>
+		  	    			</aside>
+		  	    			<aside class="video_main_screen2">
+		  	    				<div class="video_main_screen1video_only">v2</div>
+		  	    				<div class="video_main_screen1footer"><h4>Jagdish Kini, Director</h4></div>
+		  	    			</aside>
+		  	    		</div>
+		  	    	</div>
+		  	    </section>
+
+		  	    <section class="tr">
+		  	    	<div id="footer" class="table_cell">adding block</div>
+		  	    </section>
+		 </div>
+
+
+
+		  	    <script>
+                    window.onscroll=function(){myfunction()};
+                    function myfunction(){
+                        if(document.body.scrollTop>50||document.documentElement.scrollTop>50){
+                            console.log('small');
+                            document.getElementById("nav").className="table_cell windowscroll";
+                            document.getElementById("img_logo_big").className="img_logo_small";
+                        }
+                        else{
+                            console.log('large');
+                            document.getElementById("nav").className="table_cell";
+                            document.getElementById("img_logo_big").className="img_logo_big";
+                        }
+                    }
+                </script>
+		  
+	</body>
+</html>
